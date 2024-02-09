@@ -13,17 +13,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{84A2BD
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{3447542F-9C9C-4CB7-B6A1-704991569097}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tarker.Booking.Api", "Tarker.Booking.Api\Tarker.Booking.Api.csproj", "{B7155CFD-BBB1-4717-8875-48AA92CC4B7C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tarker.Booking.Api", "Tarker.Booking.Api\Tarker.Booking.Api.csproj", "{B7155CFD-BBB1-4717-8875-48AA92CC4B7C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tarker.Booking.Domain", "Tarker.Booking.Domain\Tarker.Booking.Domain.csproj", "{A4F70519-725E-44A6-9845-BD992534D5B2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tarker.Booking.Domain", "Tarker.Booking.Domain\Tarker.Booking.Domain.csproj", "{A4F70519-725E-44A6-9845-BD992534D5B2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tarker.Booking.Application", "Tarker.Booking.Application\Tarker.Booking.Application.csproj", "{C627354C-EA4E-4150-A087-708706BF6A5F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tarker.Booking.Application", "Tarker.Booking.Application\Tarker.Booking.Application.csproj", "{C627354C-EA4E-4150-A087-708706BF6A5F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tarker.Booking.Persistence", "Tarker.Booking.Persistence\Tarker.Booking.Persistence.csproj", "{1DFA5663-A6BF-4EDA-BA15-CCC355F8313D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tarker.Booking.Persistence", "Tarker.Booking.Persistence\Tarker.Booking.Persistence.csproj", "{1DFA5663-A6BF-4EDA-BA15-CCC355F8313D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tarker.Booking.External", "Tarker.Booking.External\Tarker.Booking.External.csproj", "{B83E7F11-38A9-4634-89DC-55C53A2DF55D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tarker.Booking.External", "Tarker.Booking.External\Tarker.Booking.External.csproj", "{B83E7F11-38A9-4634-89DC-55C53A2DF55D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tarker.Booking.Common", "Tarker.Booking.Common\Tarker.Booking.Common.csproj", "{D4330B9F-986C-4909-AE14-0C078A160287}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tarker.Booking.Common", "Tarker.Booking.Common\Tarker.Booking.Common.csproj", "{D4330B9F-986C-4909-AE14-0C078A160287}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
