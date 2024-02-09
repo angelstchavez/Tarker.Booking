@@ -12,6 +12,8 @@ namespace Tarker.Booking.Persistence.Configuration
             entityTypeBuilder.Property(x => x.LastName).IsRequired();
             entityTypeBuilder.Property(x => x.Username).IsRequired();
             entityTypeBuilder.Property(x => x.Password).IsRequired();
+            entityTypeBuilder.HasMany(x => x.Bookings)
+                .WithOne(x => x.User).HasForeignKey(x => x.UserId);
         }
     }
 }

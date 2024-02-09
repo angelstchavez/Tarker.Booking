@@ -10,6 +10,8 @@ namespace Tarker.Booking.Persistence.Configuration
             entityTypeBuilder.HasKey(e => e.CustomerId);
             entityTypeBuilder.Property(e => e.FullName).IsRequired();
             entityTypeBuilder.Property(e => e.DocumentNumber).IsRequired();
+            entityTypeBuilder.HasMany(x => x.Bookings)
+                .WithOne(x => x.Customer).HasForeignKey(x => x.CustomerId);
         }
     }
 }
