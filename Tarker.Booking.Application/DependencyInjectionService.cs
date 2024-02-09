@@ -2,6 +2,7 @@
 using Microsoft.Extensions.DependencyInjection;
 using Tarker.Booking.Application.Configuration;
 using Tarker.Booking.Application.Database.User.Commands.CreateUser;
+using Tarker.Booking.Application.Database.User.Commands.UpdateUser;
 
 namespace Tarker.Booking.Application
 {
@@ -17,6 +18,7 @@ namespace Tarker.Booking.Application
             services.AddSingleton(mapper.CreateMapper());
             
             services.AddTransient<ICreateUserCommand, CreateUserCommand>();
+            services.AddTransient<IUpdateUserCommand, UpdateUserCommand>();
 
             return services;
         }
