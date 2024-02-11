@@ -1,5 +1,7 @@
 ﻿using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Tarker.Booking.Application.External.GetTokenJWT;
+using Tarker.Booking.External.GetTokenJWT;
 
 namespace Tarker.Booking.External
 {
@@ -8,6 +10,7 @@ namespace Tarker.Booking.External
         public static IServiceCollection AddExternal(this IServiceCollection services,
             IConfiguration configuration)
         {
+            services.AddSingleton<IGetTokenJWTService, GetTokenJWTService>();
             return services;
         }
     }
