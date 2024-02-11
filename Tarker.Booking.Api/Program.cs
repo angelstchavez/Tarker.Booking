@@ -6,12 +6,7 @@ using Tarker.Booking.Persistence;
 
 var builder = WebApplication.CreateBuilder(args);
 
-builder.Services
-    .AddWebApi()
-    .AddCommon()
-    .AddApplication()
-    .AddExternal(builder.Configuration)
-    .AddPersistence(builder.Configuration);
+
 
 builder.Services.AddControllers();
 
@@ -24,6 +19,17 @@ app.UseSwaggerUI(options =>
     options.SwaggerEndpoint("/swagger/v1/swagger.json", "v1");
     options.RoutePrefix = string.Empty;
 });
+
+builder.Services
+    .AddWebApi()
+    .AddCommon()
+    .AddApplication()
+    .AddExternal(builder.Configuration)
+    .AddPersistence(builder.Configuration);
+
+app.UseAuthentication();
+
+app.UseAuthorization();
 
 app.MapControllers();
 
